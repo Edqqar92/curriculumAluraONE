@@ -1,0 +1,307 @@
+body{
+    background-color: #F5F5F5;
+}
+
+h2{
+    font-size: 42px;
+    text-align: justify;
+}
+
+h3{
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+h4{
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+p, summary{
+    font-size: 21px;
+    padding: 15px 0;
+}
+
+section{
+    margin: 20px auto;
+    padding: 30px 0;
+}
+
+.container{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: 50px auto 50rem;
+}
+
+/* header */
+
+.top{
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+}
+
+.logo-top{
+    display: flex;
+}
+
+.menu{
+    width: 60%;
+}
+
+.menulista{
+    float: right;
+}
+
+.item{
+    display: inline;
+    margin-left: 15px;
+}
+
+.item > a{
+    text-decoration: none;
+}
+
+/* main */
+/* hero */
+.principal{
+    grid-area: main;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    padding: 0;
+}
+
+.containerProfesion{
+    width: 70%;
+}
+
+.imageMe{
+    width: 30%;
+    text-align: center;
+}
+
+.imageMe > img{
+    width: 250px;
+    border-radius: 50%;
+}
+
+/* summary */
+
+.summary{
+    background-color: #EAF2FD;
+}
+
+.containerSummary{
+    width: 80%;
+    margin: auto;
+}
+
+.containerSummary > summary{
+    width: 70%;
+}
+
+.containerSummary > h3{
+    text-align: start;
+    padding: 0;
+}
+
+summary > p:first-child{
+    padding: 0;
+}
+
+/* skills-hobbies */
+
+.skills-hobbies{
+    width: 80%;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.box{
+    background-color: #FFFFFF;
+    border-radius: 30;
+    width: 20%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.box:hover{
+    align-items: center;
+}
+
+.box:hover > img{
+    filter: drop-shadow(2px 4px 6px black);
+    width: 35%;
+}
+
+.box > img{
+    width: 30%;
+    margin: 10px 0 10px 10px;
+    filter: grayscale();
+}
+
+.box > p{
+    padding-left: 10px;
+}
+
+.hobbies{
+    margin-top: 30px;
+}
+
+/* academy */
+
+.academy{
+    background-color: #EAF2FD;
+}
+
+.formacion{
+    width: 80%;
+    margin: auto;
+}
+
+.formacion > .flex-container{
+    flex-flow: row wrap;
+}
+
+.box-academy{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 2px;
+    text-align: start;
+}
+
+.collegue{
+    background-color: white;
+    border-radius: 30;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.collegue > img{
+    width: 60%;
+    max-height: 90%;
+    filter: grayscale();
+}
+
+.collegue > img:hover{
+    filter: none;
+}
+
+.descripcion > p{
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+/* experiencia */
+.container-experiencia{
+    padding: 0;
+}
+
+.box-experiencia{
+    width: 80%;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box-experiencia > img{
+    width: 60%;
+}
+
+.experiencia-descripcion > h3{
+    padding: 0;
+}
+
+.experiencia-descripcion > button{
+    width: 40%;
+    padding: 1rem .5rem;
+    border-color: #2A7AE4;
+    color: #2A7AE4;
+}
+
+.experiencia-descripcion > button:last-child{
+    background-color: #2A7AE4;
+    color: #FFFFFF;
+}
+
+.experiencia-descripcion > button:hover{
+    background-color: #2A7AE4;
+    color: #FFFFFF;
+    transition: .4s;
+    opacity: .7;
+}
+
+/* footer */
+
+.rodapie{
+    grid-area: footer;
+    background-color: #EAF2FD;
+    padding: 4rem 0;
+}
+
+.container-form{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-form > img{
+    width: 45%;
+}
+
+.container-form > form{
+    width: 50%;
+}
+
+.container-form > form > h3{
+    text-align: start;
+}
+
+input, textarea{
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+    padding: .5rem 0;
+}
+
+textarea{
+    resize: none;
+}
+
+.container-form > form > input:last-child{
+    width: 25%;
+    padding: .5rem .2rem;
+    background-color: #2A7AE4;
+    color: #FFFFFF;
+}
+
+.container-form > form > input:last-child:hover{
+    opacity: .7;
+}
+
+.footer{
+    text-align: center;
+    padding: 2rem;
+}
+
