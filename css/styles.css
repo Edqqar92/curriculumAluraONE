@@ -57,7 +57,8 @@ section{
 }
 
 .menulista{
-    float: right;
+    display: flex;
+    text-align: center;
 }
 
 .item{
@@ -65,7 +66,7 @@ section{
     margin-left: 15px;
 }
 
-.item > a{
+a{
     text-decoration: none;
 }
 
@@ -95,6 +96,10 @@ section{
     width: 250px;
     border-radius: 50%;
 }
+
+.menulista > .item > a > img{
+    max-width: 48px;
+} 
 
 /* summary */
 
@@ -232,19 +237,19 @@ summary > p:first-child{
     padding: 0;
 }
 
-.experiencia-descripcion > button{
+.btn{
     width: 40%;
     padding: 1rem .5rem;
     border-color: #2A7AE4;
     color: #2A7AE4;
 }
 
-.experiencia-descripcion > button:last-child{
+.experiencia-descripcion > a:last-child > button{
     background-color: #2A7AE4;
     color: #FFFFFF;
 }
 
-.experiencia-descripcion > button:hover{
+.btn:hover{
     background-color: #2A7AE4;
     color: #FFFFFF;
     transition: .4s;
